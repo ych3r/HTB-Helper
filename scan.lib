@@ -1,0 +1,17 @@
+#!/bin/bash
+
+nmap_tcp_scan()
+{
+    echo "-> TCP Scan: 'nmap -sV $TARGET'"
+    nmap -sV $TARGET | grep -E "^(PORT|[0-9]+/tcp)"
+}
+nmap_udp_scan()
+{
+    echo "-> UDP Scan (SNMP only): 'nmap -sU -sV -p 161 $TARGET'"
+    nmap -sU -sV -p 161 $TARGET | grep -E "^(PORT|[0-9]+/udp)"
+}
+nmap_tcp_all_port_scan()
+{
+    echo "-> TCP All-port Scan: 'nmap -p- -T4 --open $TARGET'"
+    nmap -p- -T4 --open $TARGET | grep -E "^\s*\S+\s+\S+\s+\S+\s*$"
+}
