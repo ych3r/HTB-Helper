@@ -5,6 +5,13 @@ What does this script do?
 - basic service & web enumeration
 - generate a note template
 
+How to use it?
+
+```sh
+$ chmod +x htb-helper.sh
+$ ./htb-helper.sh <ip>
+```
+
 What's next?
 - gaining a foothold
 - post-exploitation
