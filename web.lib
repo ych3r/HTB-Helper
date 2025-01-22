@@ -1,0 +1,13 @@
+#!/bin/bash
+
+web_whatweb()
+{
+    echo "-> $ whatweb $TARGET:$port"
+    whatweb $TARGET:$port
+}
+
+web_robots()
+{
+    echo "-> Get Robots.txt"
+    curl -L -sf http://$TARGET:$port/robots.txt
+}
