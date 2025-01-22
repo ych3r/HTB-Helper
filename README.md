@@ -27,7 +27,7 @@ PORT   STATE SERVICE VERSION
 PORT    STATE  SERVICE VERSION
 161/udp closed snmp
 
--> Full port scan (y/n):n
+-> Full port scan (y/n): n
 
 -> Web Enum (y/n): y
 
