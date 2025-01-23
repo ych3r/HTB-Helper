@@ -19,7 +19,7 @@ nmap_tcp_scan
 echo
 nmap_udp_scan
 echo
-read -p "-> Full port scan (y/n):" choice
+read -p "-> Full port scan (y/n): " choice
 case "$choice" in
     y|Y ) nmap_tcp_all_port_scan;;
     n|N ) ;;
